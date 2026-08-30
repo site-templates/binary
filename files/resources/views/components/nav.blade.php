@@ -9,7 +9,7 @@
     <nav aria-label="Primary" class="-mx-2 flex items-center gap-x-1 sm:ml-auto">
         @foreach ($site->nav_links as $link)
             @if ($link->url == $current)
-                <a href="{{ $link->url }}" aria-current="page" class="rounded-md px-2 py-1 text-base text-ink underline decoration-line underline-offset-4 sm:text-[0.9375rem]">{{ $link->label }}</a>
+                <a href="{{ $link->url }}" aria-current="page" class="rounded-md px-2 py-1 text-base text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:text-[0.9375rem]">{{ $link->label }}</a>
             @else
                 <a href="{{ $link->url }}" class="rounded-md px-2 py-1 text-base text-muted hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:text-[0.9375rem]">{{ $link->label }}</a>
             @endif
