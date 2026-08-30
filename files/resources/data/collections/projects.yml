@@ -1,0 +1,14 @@
+fields:
+    title: text
+    slug: text
+    link: url
+    description: textarea
+    year: text
+    status: text
+    role: text
+    stack: text
+    cover: image
+    coverAlt: text
+    externalUrl: url
+    externalLabel: text
+    content: richtext

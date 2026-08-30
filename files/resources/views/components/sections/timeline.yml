@@ -1,0 +1,9 @@
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: Work
+    showDetails:
+        type: toggle
+        label: Show a detail line under each role
+        default: "1"

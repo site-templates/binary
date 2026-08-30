@@ -1,0 +1,18 @@
+{
+    "name": "Binary",
+    "dialect": "blade",
+    "description": "A dead-simple personal site for someone who writes and ships — one 640px column, one row that bleeds into the gutter when you touch it, and a half-disc switch that flips the whole site between its two states.",
+    "icon": "◐",
+    "repo": "https://github.com/site-templates/binary",
+    "order": 39,
+    "category": "blog",
+    "theme": "light",
+    "accent": "#1B48E0",
+    "pages": [
+        "Home",
+        "Writing",
+        "Projects",
+        "About",
+        "Now"
+    ]
+}

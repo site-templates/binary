@@ -1,0 +1,10 @@
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: Things I am good at
+    items:
+        type: textarea
+        label: Items, separated by a middle dot
+        rows: 3
+        default: Design systems · Interface engineering · Tailwind · Accessibility · Type · Prototyping · Technical writing · Teaching

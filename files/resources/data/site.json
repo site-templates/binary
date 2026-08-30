@@ -1,0 +1,59 @@
+{
+    "name": "Binary",
+    "author": "Noor Haddad",
+    "handle": "noor",
+    "role": "Design engineer",
+    "email": "noor@binary.site",
+    "location": "Amsterdam",
+    "intro_line": "I build interfaces, and I write about the parts that were harder than they looked.",
+    "footer_note": "Set in Schibsted Grotesk and Fragment Mono. Written by hand, deployed on a Tuesday.",
+    "nav_links": [
+        {
+            "label": "Writing",
+            "url": "/writing"
+        },
+        {
+            "label": "Projects",
+            "url": "/projects"
+        },
+        {
+            "label": "About",
+            "url": "/about"
+        },
+        {
+            "label": "Now",
+            "url": "/now"
+        }
+    ],
+    "elsewhere": [
+        {
+            "label": "GitHub",
+            "detail": "Code, mostly small",
+            "url": "https://github.com"
+        },
+        {
+            "label": "Are.na",
+            "detail": "Things I am looking at",
+            "url": "https://are.na"
+        },
+        {
+            "label": "Email",
+            "detail": "The reliable one",
+            "url": "mailto:noor@binary.site"
+        }
+    ],
+    "social": [
+        {
+            "label": "GitHub",
+            "url": "https://github.com"
+        },
+        {
+            "label": "Are.na",
+            "url": "https://are.na"
+        },
+        {
+            "label": "RSS",
+            "url": "/feed.xml"
+        }
+    ]
+}

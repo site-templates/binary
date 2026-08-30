@@ -1,0 +1,15 @@
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: Elsewhere
+    links:
+        type: repeater
+        label: Elsewhere links
+        source: site.elsewhere
+        item_label: label
+        add_button_label: Add link
+        sub_fields:
+            label: text
+            detail: text
+            url: url

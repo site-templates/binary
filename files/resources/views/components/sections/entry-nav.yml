@@ -1,0 +1,9 @@
+fields:
+    current:
+        type: text
+        label: Slug of the current entry (hidden from the list)
+        default: ""
+    heading:
+        type: text
+        label: Heading
+        default: Keep reading

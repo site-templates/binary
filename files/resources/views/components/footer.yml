@@ -1,0 +1,23 @@
+fields:
+    note:
+        type: textarea
+        label: Note (overrides the site-wide note when set)
+        rows: 2
+        default: ""
+    showNote:
+        type: toggle
+        label: Show the note
+        default: "1"
+    signoff:
+        type: text
+        label: Sign-off line
+        default: Amsterdam
+    social:
+        type: repeater
+        label: Footer links
+        source: site.social
+        item_label: label
+        add_button_label: Add link
+        sub_fields:
+            label: text
+            url: url

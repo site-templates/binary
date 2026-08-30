@@ -1,0 +1,5 @@
+fields:
+    showDetails:
+        type: toggle
+        label: Show a detail line under each entry
+        default: "1"

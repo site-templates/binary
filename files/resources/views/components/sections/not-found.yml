@@ -1,0 +1,22 @@
+fields:
+    code:
+        type: text
+        label: Code
+        default: "404"
+    title:
+        type: text
+        label: Title
+        default: Nothing here
+    body:
+        type: textarea
+        label: Body
+        rows: 3
+        default: The page you were after has either moved or never existed. Both happen.
+    linkLabel:
+        type: text
+        label: Link label
+        default: Back to the beginning
+    linkUrl:
+        type: url
+        label: Link URL
+        default: /

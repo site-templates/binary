@@ -1,0 +1,24 @@
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: Writing
+    limit:
+        type: number
+        label: Entries to show
+        min: 1
+        max: 24
+        step: 1
+        default: "3"
+    showLink:
+        type: toggle
+        label: Show the archive link
+        default: "1"
+    linkLabel:
+        type: text
+        label: Archive link label
+        default: All writing
+    linkUrl:
+        type: url
+        label: Archive link URL
+        default: /writing

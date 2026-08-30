@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Meridian",
+        "slug": "meridian",
+        "link": "/project/meridian",
+        "description": "A design system for a European bank, rebuilt around one accessible colour ramp.",
+        "year": "2026",
+        "status": "Shipped",
+        "role": "Design engineering lead",
+        "stack": "TypeScript, Tailwind, Storybook",
+        "cover": "/images/projects/meridian.jpg",
+        "coverAlt": "A brushed aluminium plate with fine parallel grooves under raking light",
+        "externalUrl": "https://example.com",
+        "externalLabel": "Read the case study",
+        "content": "<p>Meridian is the design system behind a retail bank used by roughly four million people. It existed before I arrived: eleven repositories, three colour palettes that all claimed to be the real one, and a contrast audit nobody had run in two years.</p><h2>The problem was arithmetic</h2><p>Every accessibility failure we found came from the same place. Designers picked colours by eye in a tool that showed them on white, and engineers used those colours on grey, on the brand navy, and inside disabled states. Nothing in the pipeline ever compared a foreground to the background it would actually land on.</p><p>So we stopped shipping colours and started shipping <strong>pairs</strong>. Every token in Meridian names a foreground and the surfaces it is legal on, and the build fails if a pair drops below 4.5:1. It is a boring constraint and it removed a category of bug entirely.</p><h2>What changed</h2><ul><li>Eleven repositories became one, with the components published as a single versioned package.</li><li>Three palettes became one twelve-step ramp, generated rather than hand-picked.</li><li>The contrast audit became a test, so it runs on every commit instead of every two years.</li></ul><h2>The part that was hard</h2><p>Not the code. The hard part was that a generated ramp produces a brand navy that is four percent different from the one on the letterhead, and the letterhead is older than the website. We spent six weeks on four percent. In the end the marketing navy stayed for print and the ramp navy shipped for screens, which is a compromise I would defend and did not enjoy reaching.</p>"
+    },
+    {
+        "title": "Cadence",
+        "slug": "cadence",
+        "link": "/project/cadence",
+        "description": "A scheduling tool for studios that bills by the day, not the hour.",
+        "year": "2025",
+        "status": "Shipped",
+        "role": "Founding designer and engineer",
+        "stack": "Laravel, Livewire, Postgres",
+        "cover": "/images/projects/cadence.jpg",
+        "coverAlt": "A sheet of heavy off-white paper folded into a shallow grid of creases",
+        "externalUrl": "https://example.com",
+        "externalLabel": "Visit the site",
+        "content": "<p>Studios that sell days do not think in calendars. They think in a grid of people down one side and weeks across the top, and they want to see, in one glance, who is free in March. Every scheduling tool we looked at insisted on showing them a month view with events in it.</p><h2>One screen</h2><p>Cadence has one screen. People down the side, weeks across the top, one cell per person per week, and colour only where something is at risk. You can drag a booking; you can split it; you cannot open a modal, because there is nothing to put in one.</p><p>The whole product is that grid plus a settings page nobody visits twice. It took eleven weeks to build and about a year to get down to.</p><h2>What we cut</h2><ul><li>Notifications. Studios are twelve people in a room; the room is the notification.</li><li>Approval workflows. The person who moves a booking is the person allowed to move it.</li><li>Reporting. Two studios asked, then admitted they export to a spreadsheet regardless.</li></ul><h2>What I learned</h2><p>The bookings are not the data — the <em>gaps</em> are. Once we started rendering free capacity as the positive shape and bookings as the ground, people started using the tool to plan instead of to record. That was one afternoon's change and it was the entire product.</p>"
+    },
+    {
+        "title": "Ledger",
+        "slug": "ledger",
+        "link": "/project/ledger",
+        "description": "A plain-text personal finance tool with no accounts, no sync, and no opinions.",
+        "year": "2025",
+        "status": "Maintained",
+        "role": "Author",
+        "stack": "Go, SQLite, plain text",
+        "cover": "/images/projects/ledger.jpg",
+        "coverAlt": "A stack of plain index cards seen edge on, slightly fanned",
+        "externalUrl": "https://github.com",
+        "externalLabel": "Source on GitHub",
+        "content": "<p>Ledger reads a text file and tells you where the money went. It does not connect to a bank, does not run a server, and does not know your name. About nine hundred people use it, which for a tool with no marketing and a text-file interface feels like a lot.</p><h2>Why plain text</h2><p>Because the file outlives the program. Everything I have used for this in the last decade has either shut down, been acquired, or changed its export format, and in each case the thing that survived was whatever I had already written down in a form a human could read.</p><pre><code>2026-08-04  groceries      -42.10  EUR\n2026-08-04  coffee          -3.60  EUR\n2026-08-05  invoice #118  2400.00  EUR</code></pre><p>That is the whole format. Three columns and a date. Anything more expressive turned out to be a category system in disguise, and category systems are personal enough that shipping one is a small act of aggression.</p><h2>The one clever thing</h2><p>Ledger keeps a SQLite index beside the file and rebuilds it when the file changes. Queries are instant on a decade of history, and if the index is deleted nothing is lost. Every piece of state that is not the text file is a cache, and the program is allowed to throw a cache away.</p><h2>What I would change</h2><p>The command names. I chose them in an evening and they are inconsistent in a way that is now impossible to fix without breaking nine hundred people's shell aliases.</p>"
+    },
+    {
+        "title": "Halftone",
+        "slug": "halftone",
+        "link": "/project/halftone",
+        "description": "A small tool that turns a photograph into type, badly and then well.",
+        "year": "2024",
+        "status": "Archived",
+        "role": "Author",
+        "stack": "Canvas, Web Workers",
+        "cover": "/images/projects/halftone.jpg",
+        "coverAlt": "Three thin steel rods lying parallel on concrete, casting crisp shadows",
+        "externalUrl": "https://example.com",
+        "externalLabel": "Try the demo",
+        "content": "<p>Halftone started as a joke and stayed useful for about eighteen months. You drop in a photograph, pick a font, and it redraws the image out of characters, weighting each glyph by how much ink it puts on the page.</p><h2>The measurement problem</h2><p>The interesting part is not the drawing, it is deciding how dark a letter is. There is no metric for that. I ended up rendering every glyph in the font to an offscreen canvas at 64 pixels, summing the alpha channel, and normalising the result — which sounds obvious and took three attempts, because a glyph's ink density depends on the box you measure it in, and the obvious box is the wrong one for anything with a descender.</p><h2>Why it is archived</h2><p>It works. It has no bugs I know of. Nobody, including me, has opened it in a year, and a tool that nobody opens should say so on the tin rather than pretend to be maintained. The source is still up and the demo still runs.</p><p>I keep it listed because roughly a third of the emails I get about my work are about this, which is a useful reminder that the thing you are proud of and the thing people use are rarely the same thing.</p>"
+    }
+]

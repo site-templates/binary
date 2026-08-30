@@ -1,0 +1,5 @@
+fields:
+    period: text
+    role: text
+    org: text
+    detail: textarea

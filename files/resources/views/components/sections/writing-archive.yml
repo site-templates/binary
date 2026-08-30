@@ -1,0 +1,5 @@
+fields:
+    showDescriptions:
+        type: toggle
+        label: Show a description under each entry
+        default: "1"

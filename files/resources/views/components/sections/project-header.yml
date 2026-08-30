@@ -1,0 +1,58 @@
+fields:
+    title:
+        type: text
+        label: Title
+        default: ""
+    description:
+        type: textarea
+        label: Standfirst
+        rows: 3
+        default: ""
+    year:
+        type: text
+        label: Year
+        default: ""
+    status:
+        type: text
+        label: Status
+        default: ""
+    role:
+        type: text
+        label: Role
+        default: ""
+    stack:
+        type: text
+        label: Built with
+        default: ""
+    cover:
+        type: image
+        label: Cover image
+        default: ""
+    coverAlt:
+        type: text
+        label: Cover alt text
+        default: ""
+    showCover:
+        type: toggle
+        label: Show the cover image
+        default: "1"
+    externalUrl:
+        type: url
+        label: External link URL
+        default: ""
+    externalLabel:
+        type: text
+        label: External link label
+        default: ""
+    showExternal:
+        type: toggle
+        label: Show the external link
+        default: "1"
+    backLabel:
+        type: text
+        label: Back link label
+        default: Projects
+    backUrl:
+        type: url
+        label: Back link URL
+        default: /projects

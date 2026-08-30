@@ -1,0 +1,18 @@
+fields:
+    title:
+        type: text
+        label: Page title
+        default: Noor Haddad — Design engineer
+    description:
+        type: textarea
+        label: Meta description
+        rows: 3
+        default: Design engineer in Amsterdam. I build interfaces, and I write about the parts that were harder than they looked.
+    current:
+        type: text
+        label: Active nav URL
+        default: /
+    showFooter:
+        type: toggle
+        label: Show the footer
+        default: "1"

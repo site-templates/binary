@@ -1,0 +1,30 @@
+fields:
+    title:
+        type: text
+        label: Title
+        default: ""
+    description:
+        type: textarea
+        label: Standfirst
+        rows: 3
+        default: ""
+    dateFormatted:
+        type: text
+        label: Date
+        default: ""
+    readTime:
+        type: text
+        label: Reading time
+        default: ""
+    backLabel:
+        type: text
+        label: Back link label
+        default: Writing
+    backUrl:
+        type: url
+        label: Back link URL
+        default: /writing
+    showBack:
+        type: toggle
+        label: Show the back link
+        default: "1"

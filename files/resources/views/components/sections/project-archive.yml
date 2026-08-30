@@ -1,0 +1,5 @@
+fields:
+    showStatus:
+        type: toggle
+        label: Show the status word beside the year
+        default: "1"

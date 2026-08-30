@@ -1,0 +1,22 @@
+fields:
+    current:
+        type: text
+        label: Active nav URL
+        default: /
+    showSwitch:
+        type: toggle
+        label: Show the light/dark switch
+        default: "1"
+    switchLabel:
+        type: text
+        label: Switch label
+        default: Switch theme
+    links:
+        type: repeater
+        label: Navigation links
+        source: site.nav_links
+        item_label: label
+        add_button_label: Add link
+        sub_fields:
+            label: text
+            url: url

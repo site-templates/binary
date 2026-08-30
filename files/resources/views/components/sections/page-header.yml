@@ -1,0 +1,14 @@
+fields:
+    title:
+        type: text
+        label: Page title
+        default: Writing
+    intro:
+        type: textarea
+        label: Introduction
+        rows: 3
+        default: ""
+    showIntro:
+        type: toggle
+        label: Show the introduction
+        default: "1"

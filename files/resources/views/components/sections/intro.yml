@@ -1,0 +1,43 @@
+fields:
+    greeting:
+        type: text
+        label: Greeting
+        default: "Hi, I'm noor"
+    avatar:
+        type: image
+        label: Avatar
+        default: /images/avatar.jpg
+    avatarAlt:
+        type: text
+        label: Avatar alt text
+        default: Noor Haddad
+    showAvatar:
+        type: toggle
+        label: Show the avatar
+        default: "1"
+    bio:
+        type: textarea
+        label: First paragraph
+        rows: 4
+        default: I build interfaces for teams that have outgrown their first one. Mostly design systems, mostly in the browser, mostly the unglamorous half where the tokens meet the components.
+    bioSecond:
+        type: textarea
+        label: Second paragraph
+        rows: 4
+        default: For the last two years that has been independent work out of Amsterdam. Before that I spent three years inside a scheduling product, which is where I learned what a design system costs when nobody is paying attention to it.
+    availability:
+        type: text
+        label: Availability line
+        default: Taking one new client this autumn.
+    showAvailability:
+        type: toggle
+        label: Show the availability line
+        default: "1"
+    contactLabel:
+        type: text
+        label: Contact link label
+        default: Get in touch
+    contactUrl:
+        type: url
+        label: Contact link URL
+        default: mailto:noor@binary.site

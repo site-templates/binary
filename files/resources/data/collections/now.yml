@@ -1,0 +1,4 @@
+fields:
+    title: text
+    detail: textarea
+    dateFormatted: text
