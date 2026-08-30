@@ -1,9 +1,9 @@
 {
     "name": "Binary",
-    "author": "Noor Haddad",
-    "handle": "noor",
+    "author": "Sander Vos",
+    "handle": "sander",
     "role": "Design engineer",
-    "email": "noor@binary.site",
+    "email": "sander@binary.site",
     "location": "Amsterdam",
     "intro_line": "I build interfaces, and I write about the parts that were harder than they looked.",
     "footer_note": "Set in Schibsted Grotesk and Fragment Mono. Written by hand, deployed on a Tuesday.",
@@ -39,7 +39,7 @@
         {
             "label": "Email",
             "detail": "The reliable one",
-            "url": "mailto:noor@binary.site"
+            "url": "mailto:sander@binary.site"
         }
     ],
     "social": [

@@ -1,14 +1,14 @@
 @props([
-    'greeting' => "Hi, I'm noor",
+    'greeting' => "Hi, I'm sander",
     'avatar' => '/images/avatar.jpg',
-    'avatarAlt' => 'Noor Haddad',
+    'avatarAlt' => 'Sander Vos',
     'showAvatar' => '1',
     'bio' => 'I build interfaces for teams that have outgrown their first one. Mostly design systems, mostly in the browser, mostly the unglamorous half where the tokens meet the components.',
     'bioSecond' => 'For the last two years that has been independent work out of Amsterdam. Before that I spent three years inside a scheduling product, which is where I learned what a design system costs when nobody is paying attention to it.',
     'availability' => 'Taking one new client this autumn.',
     'showAvailability' => '1',
     'contactLabel' => 'Get in touch',
-    'contactUrl' => 'mailto:noor@binary.site',
+    'contactUrl' => 'mailto:sander@binary.site',
 ])
 <section class="mx-auto max-w-[40rem] px-6 pt-10 sm:pt-14">
     @if ($showAvatar)

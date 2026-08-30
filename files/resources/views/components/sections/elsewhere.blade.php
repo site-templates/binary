@@ -8,8 +8,8 @@
         @foreach ($site->elsewhere as $item)
             <li>
                 <a href="{{ $item->url }}" class="row flex items-baseline gap-4 py-1.5">
-                    <span class="flex min-w-0 items-baseline gap-1.5">
-                        <span class="text-base sm:text-[0.9375rem]">{{ $item->label }}</span>
+                    <span class="flex min-w-0 items-start gap-1.5 text-base sm:text-[0.9375rem]">
+                        <span class="min-w-0">{{ $item->label }}</span>
                         <svg viewBox="0 0 16 16" class="row-arrow size-4 h-lh shrink-0 fill-muted" aria-hidden="true">
                             <path d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z"/>
                         </svg>

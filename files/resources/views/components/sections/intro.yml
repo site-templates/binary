@@ -2,7 +2,7 @@ fields:
     greeting:
         type: text
         label: Greeting
-        default: "Hi, I'm noor"
+        default: "Hi, I'm sander"
     avatar:
         type: image
         label: Avatar
@@ -10,7 +10,7 @@ fields:
     avatarAlt:
         type: text
         label: Avatar alt text
-        default: Noor Haddad
+        default: Sander Vos
     showAvatar:
         type: toggle
         label: Show the avatar
@@ -40,4 +40,4 @@ fields:
     contactUrl:
         type: url
         label: Contact link URL
-        default: mailto:noor@binary.site
+        default: mailto:sander@binary.site

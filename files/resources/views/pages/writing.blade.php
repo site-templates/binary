@@ -1,5 +1,5 @@
 <x-layouts.main
-    title="Writing — Noor Haddad"
+    title="Writing — Sander Vos"
     description="Notes on design systems, interface craft, and the parts of the work that resist being turned into a process."
     current="/writing"
 >

@@ -1,5 +1,5 @@
 <x-layouts.main
-    title="Projects — Noor Haddad"
+    title="Projects — Sander Vos"
     description="Design systems, product surfaces, and a couple of small tools that are still running."
     current="/projects"
 >

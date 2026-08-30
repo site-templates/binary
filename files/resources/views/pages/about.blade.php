@@ -1,5 +1,5 @@
 <x-layouts.main
-    title="About — Noor Haddad"
+    title="About — Sander Vos"
     description="Design engineer in Amsterdam. Ten years of interfaces, most of them somebody else's."
     current="/about"
 >

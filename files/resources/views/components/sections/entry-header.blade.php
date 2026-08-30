@@ -9,7 +9,7 @@
 ])
 <section class="mx-auto max-w-[40rem] px-6 pt-10 pb-2 sm:pt-14">
     @if ($showBack)
-        <a href="{{ $backUrl }}" class="row inline-flex items-baseline gap-1.5 text-base text-muted hover:text-ink sm:text-[0.9375rem]">
+        <a href="{{ $backUrl }}" class="row inline-flex items-start gap-1.5 text-base text-muted hover:text-ink sm:text-[0.9375rem]">
             <svg viewBox="0 0 16 16" class="size-4 h-lh shrink-0 fill-current" aria-hidden="true">
                 <path d="M13 8a.75.75 0 0 0-.75-.75H5.06l2.72-2.72a.75.75 0 0 0-1.06-1.06L2.97 7.22a.75.75 0 0 0 0 1.06l3.75 3.75a.75.75 0 1 0 1.06-1.06L5.06 8.25h7.19A.75.75 0 0 0 13 8Z"/>
             </svg>

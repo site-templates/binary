@@ -1,5 +1,5 @@
 <x-layouts.main
-    title="Now — Noor Haddad"
+    title="Now — Sander Vos"
     description="What I am working on, reading, and failing at this month."
     current="/now"
 >

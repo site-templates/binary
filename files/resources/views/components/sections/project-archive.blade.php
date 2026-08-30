@@ -13,8 +13,8 @@
                         @endif
                     </span>
                     <span class="order-1 min-w-0 md:order-2 md:flex-1">
-                        <span class="flex items-baseline gap-1.5">
-                            <span class="text-base sm:text-[0.9375rem]">{{ $entry->title }}</span>
+                        <span class="flex items-start gap-1.5 text-base sm:text-[0.9375rem]">
+                            <span class="min-w-0">{{ $entry->title }}</span>
                             <svg viewBox="0 0 16 16" class="row-arrow size-4 h-lh shrink-0 fill-muted" aria-hidden="true">
                                 <path d="M3 8a.75.75 0 0 1 .75-.75h7.19L8.22 4.53a.75.75 0 0 1 1.06-1.06l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.72-2.72H3.75A.75.75 0 0 1 3 8Z"/>
                             </svg>

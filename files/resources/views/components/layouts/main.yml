@@ -2,7 +2,7 @@ fields:
     title:
         type: text
         label: Page title
-        default: Noor Haddad — Design engineer
+        default: Sander Vos — Design engineer
     description:
         type: textarea
         label: Meta description
