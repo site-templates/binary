@@ -27,7 +27,7 @@
 
     @if ($showExternal)
         <p class="mt-5 text-base sm:text-[0.9375rem]">
-            <a href="{{ $externalUrl }}" class="link font-medium">{{ $externalLabel }}</a>
+            <a href="{{ $externalUrl }}" target="_blank" rel="noopener" class="link font-medium">{{ $externalLabel }}</a>
         </p>
     @endif
 </section>
