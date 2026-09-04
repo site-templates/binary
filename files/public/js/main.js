@@ -8,6 +8,10 @@
        script in the head, so this file only has to handle the press.
        Nothing here is required for the page to be readable — with the
        script blocked, the site simply follows the system setting.
+
+       Everything here lives in the header, which persists across the
+       in-place page changes of instant navigation (only <main> is
+       swapped), so it binds once and nothing needs to re-run per page.
        --------------------------------------------------------------- */
     var root = document.documentElement;
     var toggle = document.querySelector('[data-theme-toggle]');
